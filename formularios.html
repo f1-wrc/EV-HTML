@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <form action="" method="post">
+
+        <header>
+            <h1><strong><u>Contacto con el Club</u></strong></h1>
+            <h2><strong><em>Club Atlético River Plate</em></strong>
+            </h2>
+            <div><img src="./assets/riverplateescrito.webp" width="150" alt="River"></div>
+        </header>
+
+        <main>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombre">Ingrese su nombre</label>
+
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+
+                <div> <label for="apellido">Ingrese su apellido</label>
+
+                    <input type="text" name="apeellido" id="apellido" required>
+                </div>
+
+                <div> <label for="email">Ingrese su email</label>
+
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div> <label for="dni">Ingrese su DNI</label>
+
+                    <input type="text" name="dni" id="dni" required>
+                </div>
+
+                <div><label for="nacimiento">Ingrese su fecha de nacimiento</label>
+
+                    <input type="date" name="nacimiento" id="nacimiento" required>
+                </div>
+
+
+                <fieldset>
+                    <legend>
+                        Preferencias del Club
+                    </legend>
+                    <div>
+                        <label for="socio">Socio</label>
+
+                        <input type="radio" name="socio" id="si">
+                        <label for="si">Si</label>
+                        <input type="radio" name="socio" id="no">
+                        <label for="no">No</label>
+
+
+
+
+                        <div>
+                            <label for="deporte">Deporte de Elección</label>
+
+                            <select name="deporte" id="deporte">
+                                <option value="deporte">Ingrese su Deporte</option>
+                                <option value="patin" id="patin">Patin</option>
+                                <option value="voley" id="voley">Voley</option>
+                                <option value="basket" id="basket">Basket</option>
+                                <option value="natación" id="natación">Natación</option>
+                                <option value="pelota paleta" id="pelota paleta">Pelota Paleta</option>
+                            </select>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="miembros">Cantidad De Miembros Familiares</label>
+
+                            <input type="number" name="miembros" id="miembros" min="1" max="25">
+                        </div>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Comentarios o Sugerencias</legend>
+                            <label for="comentarios">Deje aquí su comentario o Sugerencia para el club</label>
+                            <div>
+                                <textarea name="comentarios" id="comentarios"></textarea>
+                            </div>
+                        </fieldset>
+
+                    </div>
+                </fieldset>
+
+            </fieldset>
+        </main>
+
+        <footer>
+            <ul>Información Del Club
+                <li>correo
+                    <ul>
+                        <li>RiverPlate@gmail.com</li>
+                    </ul>
+                <li>Teléfono
+                    <ul>
+                        <li>2993478560</li>
+                    </ul>
+                <li>Ubicación
+                    <ul>
+                        <li>Nuñez</li>
+                    </ul>
+                </li>
+                </li>
+                </li>
+            </ul>
+
+            <div>
+                <p><strong><em>Página oficial del Millonario</em></strong></p>
+                <a href="https://www.cariverplate.com.ar/"><img src="./assets/River.png" width="75" alt=""></a>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </footer>
+
+
+    </form>
+
+</body>
+
+</html>
